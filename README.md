@@ -1,1 +1,1 @@
-# take-mark-down
+# Take Mark Down, a PHP markdown parser
