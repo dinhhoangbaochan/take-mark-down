@@ -10,7 +10,7 @@ $accepted_args = [
 ];
 
 // $argv[0] will be the bin file
-$main_arg = $argv[1];
+$main_arg = parse_main_arg($argv[1]);
 
 if ( in_array($main_arg, $accepted_args) ) {
   echo "Parse $main_arg";
