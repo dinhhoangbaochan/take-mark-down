@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Only these arguments are valid
+ */
+$accepted_args = [
+  'line', 'file'
+];
+
+// $argv[0] will be the bin file
+$main_arg = $argv[1];
+
+if ( in_array($main_arg, $accepted_args) ) {
+  echo "Parse $main_arg";
+} else {
+  echo "Invalid argument";
+}
